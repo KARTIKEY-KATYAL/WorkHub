@@ -5,8 +5,8 @@ import Image from "next/image";
 import { useAuth } from "@clerk/clerk-react";
 
 const Header = () => {
-    const {orgId} = useAuth()
-    console.log(orgId)
+    const orgId = useAuth()
+    // console.log(orgId)
   return (
     <div className="w-full flex items-center justify-between px-4 py-2 bg-slate-100 shadow-md">
       {/* Left Section: Logo */}
